@@ -1,5 +1,8 @@
 # input-fixer
-Provides a workaround for phantom blur/focus events for HTML inputs in Safari MacOS.
+
+[![npm version](https://badge.fury.io/js/input-fixer.svg)](https://badge.fury.io/js/input-fixer)
+
+Provides a workaround for phantom blur/focus events for HTML inputs in Safari MacOS. The bug this code fixes is described in a [WebKit bug/Radar](https://bugs.webkit.org/show_bug.cgi?id=179990) and [React bug](https://github.com/facebook/react/issues/10871).
 
 With two or more text inputs on a form, switching focus by click from one to another sometimes causes an extra focus/blur to fire. Untreated form elements which depend on focus/blur can get stuck in a loop as demonstrated in [React Datepicker](https://github.com/Hacker0x01/react-datepicker/issues/1077). 
 
@@ -16,8 +19,6 @@ npm install input-fixer --save
 ```
 
 ## Details of the bug
-
-The bug this code fixes is described in a [WebKit bug/Radar](https://bugs.webkit.org/show_bug.cgi?id=179990) and [React bug](https://github.com/facebook/react/issues/10871).
 
 From tests conducted, the bug effects Safari MacOS 10.x and 11.x.
 
