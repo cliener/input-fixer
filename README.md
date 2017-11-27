@@ -18,6 +18,12 @@ The package can be installed via NPM:
 npm install input-fixer --save
 ```
 
+## Variants
+
+The package is available as vanilla JS as above and the following:
+
+* [React Input Fixer](./react/)
+
 ## Details of the bug
 
 From tests conducted, the bug effects Safari MacOS 10.x and 11.x.
