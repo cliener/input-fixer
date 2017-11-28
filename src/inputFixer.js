@@ -1,7 +1,7 @@
 const inputFixer = {
-  // 50ms throttle rate which is too fast for human interaction
+  // 100ms throttle rate which is too fast for human interaction
   // Fastest gamers can button mash around 100ms for reference
-  throttleDuration: 50,
+  throttleDuration: 100,
   // Prevent second and subsequent events of this type from firing within the throttleDuration
   throttleEvent: (element, eventType) => {
     element.addEventListener(eventType, event => {

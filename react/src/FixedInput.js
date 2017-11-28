@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-// 50ms throttle rate which is too fast for human interaction
+// 100ms throttle rate which is too fast for human interaction
 // Fastest gamers can button mash around 100ms for reference
-const throttleDuration = 50;
+const throttleDuration = 100;
 
 // Prevent second and subsequent events of this type from firing within the throttleDuration
 const throttleEvent = (event) => {

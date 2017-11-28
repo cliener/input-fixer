@@ -1,6 +1,6 @@
 {
   "name": "input-fixer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides a workaround for phantom blur/focus events for HTML inputs in Safari MacOS.",
   "main": "src/inputFixer.js",
   "scripts": {

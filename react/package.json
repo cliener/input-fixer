@@ -1,11 +1,11 @@
 {
   "name": "react-input-fixer",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Provides a workaround for phantom blur/focus events for HTML inputs in Safari MacOS.",
-  "main": "src/InputFixer.js",
+  "main": "dist/FixedInput.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "cp -r src dist"
+    "prepublish": "babel src --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/cliener/input-fixer/issues"
   },
-  "homepage": "https://github.com/cliener/input-fixer/react#readme"
+  "homepage": "https://github.com/cliener/input-fixer/react#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }
